@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MnkTestApp</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="btn_show_list">Show list</string>
+    <string name="title_activity_display_list">DisplayListActivity</string>
+</resources>

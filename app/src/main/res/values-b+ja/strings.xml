@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mnkテストアプリ</string>
+    <string name="edit_message">入力して下さい</string>
+    <string name="button_send">送信て</string>
+</resources>
