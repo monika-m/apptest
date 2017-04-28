@@ -17,16 +17,9 @@ public class DisplayListActivity extends AppCompatActivity {
 
         // retrieve the type of list to be shown
         Intent intent = getIntent();
-        String listType = intent.getStringExtra(MainActivity.LIST_VALUES_TYPE);
+        String[] messagesList = intent.getStringArrayExtra(MainActivity.LIST_VALUES_TYPE);
 
-        // set some dummy data (find the data to be displayed in the list)
-        ArrayList<String> messages = new ArrayList<String>();
-        messages.add("Item 1");
-        messages.add("Item 2");
-        messages.add("Item 3");
-        messages.add("Item 4");
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, messages);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, messagesList);
         ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(adapter);
     }
